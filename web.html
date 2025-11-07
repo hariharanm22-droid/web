@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWA Starter Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font and smooth scrolling for a modern feel */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">
+                &lt;hariharanm22-droid/&gt;
+            </h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button (Placeholder for simplicity) -->
+            <button class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 px-4 sm:px-6 lg:px-8 text-center bg-white">
+            <div class="max-w-4xl mx-auto">
+                <img src="https://placehold.co/150x150/4f46e5/ffffff?text=HM" alt="Profile Picture Placeholder" class="rounded-full w-36 h-36 mx-auto mb-6 shadow-lg border-4 border-indigo-200">
+                <h2 class="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+                    Hi, I'm Hariharan M
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Full-Stack Developer | Building modern, scalable, and responsive web applications.
+                </p>
+                <a href="#contact" class="inline-block px-8 py-3 text-lg font-semibold text-white bg-indigo-600 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center border-b-4 border-indigo-400 inline-block pb-1">About Me</h3>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    I specialize in creating efficient web solutions, focusing on the complete development lifecycle from concept to deployment. I leverage modern frameworks and cloud technologies to deliver high-quality products. This page itself is a simple example, ready to be hosted instantly on Azure Static Web Apps.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md transform hover:shadow-xl transition duration-300">
+                        <span class="text-4xl text-indigo-500 mb-2 block">💻</span>
+                        <p class="font-semibold text-gray-800">Front-End</p>
+                        <p class="text-sm text-gray-500">React, Vue, Tailwind CSS</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md transform hover:shadow-xl transition duration-300">
+                        <span class="text-4xl text-indigo-500 mb-2 block">⚙️</span>
+                        <p class="font-semibold text-gray-800">Back-End</p>
+                        <p class="text-sm text-gray-500">Node.js, Azure Functions</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md transform hover:shadow-xl transition duration-300">
+                        <span class="text-4xl text-indigo-500 mb-2 block">☁️</span>
+                        <p class="font-semibold text-gray-800">Cloud & DevOps</p>
+                        <p class="text-sm text-gray-500">Azure, GitHub Actions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Mock Content) -->
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-gray-900 mb-10 text-center border-b-4 border-indigo-400 inline-block pb-1 mx-auto">Latest Projects</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/1d4ed8/ffffff?text=Project+1" alt="Project Placeholder" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">E-commerce Platform</h4>
+                        <p class="text-gray-600 text-sm mb-4">A scalable MERN stack application featuring real-time inventory and payment integration.</p>
+                        <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-medium px-3 py-1 rounded-full">React</span>
+                        <span class="inline-block bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/9333ea/ffffff?text=Project+2" alt="Project Placeholder" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Data Visualization Dashboard</h4>
+                        <p class="text-gray-600 text-sm mb-4">Interactive dashboard using D3.js to display complex financial metrics.</p>
+                        <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Vue.js</span>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">D3.js</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Project+3" alt="Project Placeholder" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Serverless API Backend</h4>
+                        <p class="text-gray-600 text-sm mb-4">A high-performance API hosted entirely on Azure Functions and Cosmos DB.</p>
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full">Azure Functions</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">Serverless</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-indigo-600 text-white">
+            <div class="max-w-2xl mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-4">Let's build something great together.</h3>
+                <p class="text-lg mb-8 opacity-90">I am always open to discussing new projects and collaborations.</p>
+
+                <div class="space-y-4">
+                    <a href="mailto:hariharan@example.com" class="block w-full sm:w-2/3 mx-auto px-6 py-3 font-semibold text-indigo-600 bg-white rounded-lg shadow-xl hover:bg-gray-100 transition duration-300">
+                        Email Me: hariharan@example.com
+                    </a>
+                    <a href="https://github.com/hariharanm22-droid" target="_blank" class="block w-full sm:w-2/3 mx-auto px-6 py-3 font-semibold text-white border-2 border-white rounded-lg hover:bg-white hover:text-indigo-600 transition duration-300">
+                        View GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2024 hariharanm22-droid. All rights reserved.</p>
+            <p class="mt-1">Deployed via Azure Static Web Apps</p>
+        </div>
+    </footer>
+
+</body>
+</html>
